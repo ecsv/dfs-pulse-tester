@@ -41,7 +41,7 @@ blocks:
     comment: 'List chooser in GUI to select the channel
 
       our HackRF will transmit on - NB'
-    gui_hint: 0,0,1,1
+    gui_hint: ''
     label: Channel
     label0: 52 | 5260"
     label1: ''
@@ -110,7 +110,7 @@ blocks:
   id: variable_qtgui_chooser
   parameters:
     comment: GUI on/off switch for RF
-    gui_hint: 0,2,1,2
+    gui_hint: ''
     label: Pulse
     label0: Stop
     label1: Start
@@ -136,6 +136,69 @@ blocks:
     coordinate: [288, 412.0]
     rotation: 0
     state: enabled
+- name: bbgain
+  id: variable_qtgui_range
+  parameters:
+    comment: ''
+    gui_hint: ''
+    label: bbgain
+    min_len: '200'
+    orient: Qt.Horizontal
+    rangeType: float
+    start: '0'
+    step: '1'
+    stop: '100'
+    value: '20'
+    widget: counter_slider
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [760, 564.0]
+    rotation: 0
+    state: true
+- name: ifgain
+  id: variable_qtgui_range
+  parameters:
+    comment: ''
+    gui_hint: ''
+    label: ifgain
+    min_len: '200'
+    orient: Qt.Horizontal
+    rangeType: float
+    start: '0'
+    step: '1'
+    stop: '100'
+    value: '40'
+    widget: counter_slider
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [632, 556.0]
+    rotation: 0
+    state: true
+- name: rfgain
+  id: variable_qtgui_range
+  parameters:
+    comment: ''
+    gui_hint: ''
+    label: rfgain
+    min_len: '200'
+    orient: Qt.Horizontal
+    rangeType: float
+    start: '0'
+    step: '1'
+    stop: '100'
+    value: '10'
+    widget: counter_slider
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [464, 556.0]
+    rotation: 0
+    state: true
 - name: samp_rate
   id: variable
   parameters:
@@ -266,7 +329,7 @@ blocks:
     ant8: ''
     ant9: ''
     args: ''
-    bb_gain0: '20'
+    bb_gain0: bbgain
     bb_gain1: '20'
     bb_gain10: '20'
     bb_gain11: '20'
@@ -403,7 +466,7 @@ blocks:
     freq7: 100e6
     freq8: 100e6
     freq9: 100e6
-    gain0: '10'
+    gain0: rfgain
     gain1: '10'
     gain10: '10'
     gain11: '10'
@@ -435,7 +498,7 @@ blocks:
     gain7: '10'
     gain8: '10'
     gain9: '10'
-    if_gain0: '40'
+    if_gain0: ifgain
     if_gain1: '20'
     if_gain10: '20'
     if_gain11: '20'
