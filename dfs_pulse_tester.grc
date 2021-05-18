@@ -169,7 +169,7 @@ blocks:
     start: '0'
     step: '1'
     stop: '100'
-    value: '40'
+    value: '100'
     widget: counter_slider
   states:
     bus_sink: false
@@ -190,7 +190,7 @@ blocks:
     start: '0'
     step: '1'
     stop: '100'
-    value: '10'
+    value: '100'
     widget: counter_slider
   states:
     bus_sink: false
