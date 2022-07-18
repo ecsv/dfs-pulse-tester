@@ -84,7 +84,7 @@ blocks:
     label2: ''
     label3: ''
     label4: ''
-    labels: '["FCC Type 0", "FCC Type 1", "FCC Type 2", "FCC Type 3", "FCC Type 4"]'
+    labels: '["FCC Type 0", "FCC Type 1", "FCC Type 2", "FCC Type 3", "FCC Type 4", "ETSI Type 1", "ETSI Type 2", "ETSI Type 3", "ETSI Type 4", "ETSI Type 5", "ETSI Type 6"]'
     num_opts: '0'
     option0: '0'
     option1: '1'
@@ -93,7 +93,13 @@ blocks:
     option4: '4'
     options: '[ [1] * 1 * scaler + [0] * 1427 * scaler, [1] * 1 * scaler + [0] * 937
       * scaler, [1] * 5 * scaler + [0] * 200 * scaler, [1] * 8 * scaler + [0] * 350
-      * scaler, [1] * 15 * scaler + [0] * 250 * scaler ]'
+      * scaler, [1] * 15 * scaler + [0] * 250 * scaler,
+      [1] * 1 * scaler + [0] * 999 * scaler,
+      [1] * 2 * scaler + [0] * 998 * scaler,
+      [1] * 2 * scaler + [0] * 298 * scaler,
+      [1] * 25 * scaler + [0] * 325 * scaler,
+      [1] * 1 * scaler + [0] * 2499 * scaler,
+      [1] * 1 * scaler + [0] * 832 * scaler ]'
     orient: Qt.QVBoxLayout
     type: raw
     value: '[1] * 15 * scaler + [0] * 250 * scaler'
